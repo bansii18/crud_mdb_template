@@ -6,12 +6,13 @@
     <title>Update Operation</title>
 </head>
 <body>
-    <h1>Edit User</h1>
-<form method="POST" action="/<%= user._id %>?_method=PUT">
-  Name: <input name="name" value="<%= user.name %>"><br>
-  Email: <input name="email" value="<%= user.email %>"><br>
-  Age: <input name="age" value="<%= user.age %>"><br>
+<h1>Edit Order</h1>
+<form method="POST" action="/<%= order._id %>?_method=PUT">
+  Order ID: <input name="orderID" value="<%= order.orderID %>" required><br>
+  Ship Name: <input name="shipName" value="<%= order.shipName %>" required><br>
+  Freight: <input name="freight" value="<%= order.freight %>" required><br>
   <button type="submit">Update</button>
 </form>
+
 </body>
 </html>
